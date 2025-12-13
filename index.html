@@ -38,6 +38,9 @@
       border: 5px solid #ffcc00;
       border-radius: 15px;
     }
+    #rpsSriyanSites{
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -53,5 +56,35 @@
     <iframe src="https://flappybird.io/" width="700" height="400"></iframe>
   </div>
 
+   <div class="game-container">
+    <h2>Tic Tac Toe</h2>
+    <iframe src="https://tictactoefree.com/" width="700" height="400"></iframe>
+  </div>
+
+   <div class="game-container">
+    <h2>2048</h2>
+    <iframe src="https://play2048.co/classic" width="700" height="400"></iframe>
+  </div>
+
+  <div class="game-container" id="rpsReal">
+    <h2>Rock Paper Scissors</h2>
+    <iframe src="https://rockpaperscissors-ai.vercel.app/" width="700" height="400"></iframe>
+  </div>
+
+  <div class="game-container" id="rpsSriyanSites">
+    <h2>Rock Paper Scissors</h2>
+    <iframe src="https://www.sriyansites.mywire.org/p/rock-paper-scissors.html" width="700" height="400"></iframe>
+  </div>
+
+  <script>
+    const randNum = Math.floor(Math.random()*10)+1;
+    console.log(randNum);
+
+    if(randNum === 1){
+      document.querySelector("#rpsSriyanSites").style.display = block;
+      document.querySelector("#rpsReal").style.display = none;
+    } else {}
+  </script>
 </body>
 </html>
+
